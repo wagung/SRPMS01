@@ -1,0 +1,13 @@
+How To Install This Package
+=========================================
+
+sudo yum -y install yum-utils rpmdevtools 
+
+sudo yum-builddep *src.rpm
+
+rpmbuild --rebuild *.src.rpm
+
+yum localinstall --nogpgcheck *.rpm
+
+
+http://www.linuk.info
